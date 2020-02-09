@@ -164,7 +164,6 @@ class _FormCardState extends State<FormCard> {
                             color: Colors.transparent,
                             child: InkWell(
                                 onTap: () {
-                                  loadMainPage(context);
                                   final form = formKey.currentState;
                                   if (form.validate()) {
                                     form.save();

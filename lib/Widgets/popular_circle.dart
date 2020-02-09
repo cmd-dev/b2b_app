@@ -13,7 +13,8 @@ Container buildBrandsRowContainer({List urls}) {
             image: AssetImage('images/texture_6.jpg'))),
     child: Column(
       children: <Widget>[
-        Text('Featured Brands', style: AppStyle.headingStyle2,),
+        Text('Featured Brands',
+          style: AppStyle.headingStyle2.copyWith(color: Colors.black87),),
 
         Container(
             padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
@@ -51,7 +52,7 @@ Widget getPopularCities() {
             margin: EdgeInsets.all(20),
             child: Text(
               'Popular Cities',
-              style: AppStyle.headingStyle2,
+              style: AppStyle.headingStyle2.copyWith(color: Colors.black87),
             )),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

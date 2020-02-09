@@ -31,6 +31,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<User>(
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         ),
         themedWidgetBuilder: (context, theme) =>
             MaterialApp(
+
               routes: {
                 '/chats': (context) => ChatPage(),
                 '/home': (context) => HomePage(),
@@ -130,11 +132,13 @@ class _MyAppScaffoldState extends State<MyAppScaffold> {
                         child: Text('Search'),
                       )),
                   suffixMode: OverlayVisibilityMode.editing,
+                  focusNode: FocusNode(canRequestFocus: false),
                   cursorColor: Colors.red,
                   placeholderStyle: AppStyle.subtitleStyle1,
                   placeholder: 'Search for products, sellers, and more',
                   prefix: Icon(
                     Icons.search,
+                    color: Colors.black,
                     size: 50,
                   ),
                   decoration: BoxDecoration(
